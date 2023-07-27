@@ -2,7 +2,13 @@ MAX_LINES = 3
 #defining code for deposit:
 def deposit():
   while True:
-@@ -12,4 +12,25 @@ def deposit():
+    amount = input("what would you like to deposit? ₹" )
+    if amount.isdigit():
+      amount = int(amount)
+      if amount > 0:
+        break
+      else:
+        print("Amount must be greater than 0. ")
     else:
       print("Please enter a number")
   return amount
